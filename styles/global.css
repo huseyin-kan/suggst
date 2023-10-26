@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.font-roboto{
+    font-family: Roboto, sans-serif;
+}
+
+.font-playpen{
+    font-family: Playpen Sans, cursive;
+}
+
+.gradient{
+    @apply bg-gradient-to-r from-orange-600 to-red-800
+}
+
+.tde{
+    @apply transition-all duration-200 ease-in-out
+}
