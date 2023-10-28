@@ -28,9 +28,9 @@ const Nav = () => {
             {session?.user ?
             (
                 <div className='flex gap-3 md:gap-5'>
-                    <Link href="/create-suggest" className='gradient gradient border border-red-700 text-center px-4 py-2 hover:opacity-80 tde'>Create Suggest</Link>
-                    <button type="button" className='gradient bg-clip-text border border-red-700 text-center px-4 py-2 hover:opacity-80 tde' onClick={signOut}>Sign Out</button>
-                    <Link href="/profile">
+                    <Link href="/create-suggest" className='gradient gradient border rounded-full border-red-700 text-center px-4 py-2 hover:opacity-80 tde'>Create Suggest</Link>
+                    <button type="button" className='gradient bg-clip-text border rounded-full text-red-700 border-red-700 text-center px-4 py-2 hover:opacity-80 tde' onClick={signOut}>Sign Out</button>
+                    <Link href="/profile" className='flex items-center justify-center'>
                         <Image width={36} height={36} src={session?.user.image} className='rounded-full' alt='profile'/>
                     </Link>
                 </div>
@@ -51,7 +51,7 @@ const Nav = () => {
             (   
             
                 <div className='flex'>
-                <Image src="/assets/logo.svg" width={36} height={36} className='rounded-full hover:cursor-pointer' alt='profile' onClick={()=>setToggleDropdown((prev)=>!prev)} />
+                <Image src={session?.user.image}  width={36} height={36} className='rounded-full hover:cursor-pointer' alt='profile' onClick={()=>setToggleDropdown((prev)=>!prev)} />
                 {
                     toggleDropdown && (
                         <div className='flex flex-col items-center justify-start absolute text-xl font-roboto font-semibold py-4 px-1 -right-20 divide-y mt-3 rounded-lg top-full bg-white/95 text-black min-w-[200px] gap-2'>

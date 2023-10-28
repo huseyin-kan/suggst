@@ -11,8 +11,7 @@ const RootLayout = ({children}) => {
     <html lang='en'>
         <body>
           <Provider>
-            <div className='w-screen h-screen bg-gradient-to-b from-yellow-400 to-orange-500'></div>
-            <main className='absolute top-0 w-full h-full z-10 p-4 text-white'>
+            <main className='relative bg-gradient-to-br from-yellow-400 to-orange-500  top-0 min-w-screen min-h-screen z-10 p-4 text-white'>
                 <Nav/>
                 {children}
             </main>
