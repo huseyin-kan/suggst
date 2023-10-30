@@ -19,7 +19,7 @@ const CreateSuggest = () => {
         try {
             const response  = await fetch('/api/prompt/new',{
                 method:'POST',
-                body:Json.stringfy({
+                body: JSON.stringify({
                     suggest:post.suggest,
                     tag:post.tag,
                     creator:session?.user.id
