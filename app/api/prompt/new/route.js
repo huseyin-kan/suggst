@@ -6,16 +6,17 @@ export const POST = async(req,res) =>{
     const{suggest,tag,userId} = await req.json()
     try {
         await connectToDB()
-        const newSuggest= Suggest({
+
+        const newSuggest= new Suggest({
             creator:userId,
             suggest,
             tag
         })
         await newSuggest.save()
 
-        return new Promise(JSON.stringify(newSuggest),{status:200})
+        return new Response(JSON.stringify(newSuggest),{status:201})
 
     } catch (error) {
-        return new Promise(error.message,{status:500})
+        return new Response('Failed to create new suggest',{status:500})
     }
 } 

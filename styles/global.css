@@ -21,3 +21,11 @@
 .tde{
     @apply transition-all duration-200 ease-in-out
 }
+
+.yellow-gradient{
+    @apply  bg-gradient-to-r bg-clip-text from-yellow-300 to-yellow-600
+}
+
+.red-gradient{
+    @apply bg-gradient-to-r bg-clip-text from-red-400 to-red-700
+}
