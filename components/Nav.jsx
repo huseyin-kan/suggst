@@ -28,7 +28,7 @@ const Nav = () => {
             {session?.user ?
             (
                 <div className='flex gap-3 md:gap-5'>
-                    <Link href="/create-suggest" className='gradient gradient border rounded-full border-red-700 text-center px-4 py-2 hover:opacity-80 tde'>Create Suggest</Link>
+                    <Link href="/create-suggest" className='gradient border rounded-full border-red-700 text-center px-4 py-2 hover:opacity-80 tde'>Create Suggest</Link>
                     <button type="button" className='gradient bg-clip-text border rounded-full text-red-700 border-red-700 text-center px-4 py-2 hover:opacity-80 tde' onClick={signOut}>Sign Out</button>
                     <Link href="/profile" className='flex items-center justify-center'>
                         <Image width={36} height={36} src={session?.user.image} className='rounded-full' alt='profile'/>
