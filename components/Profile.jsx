@@ -1,5 +1,5 @@
 import React from 'react'
-import PromptCard from './PromptCard'
+import SuggestCard from './SuggestCard'
 
 const Profile = ({name,desc,data,handleEdit,handleDelete}) => {
   return (
@@ -13,7 +13,7 @@ const Profile = ({name,desc,data,handleEdit,handleDelete}) => {
                 data.length > 0
                 ?
                 data.map((post)=>(
-                    <PromptCard key={post._id} post={post} handleEdit={()=>handleEdit && handleEdit(post)} handleDelete={()=>handleDelete && handleDelete(post)}/>
+                    <SuggestCard key={post._id} post={post} handleEdit={()=>handleEdit && handleEdit(post)} handleDelete={()=>handleDelete && handleDelete(post)}/>
                 ))
                 :
                 <h1 className='text-4xl text-center text-orange-800 font-transpen font-bold'>No Suggestion Shared</h1>

@@ -20,7 +20,7 @@ const Nav = () => {
   return (
     <nav className='flex items-center justify-around font-roboto  px-2'>
         <Link href='/' className='flex gap-2 items-center justify-center '>
-            <Image src="/assets/logo.svg" width={30} height={30} className='object-contain'/>
+            <Image src="/assets/logo.svg" width={30} height={30} alt='profile' className='object-contain'/>
             {/* <a target="_blank" href="https://icons8.com/icon/k26tEQmw0PSS/tips">Tips</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
             <p className='text-2xl text-center gradient  bg-clip-text text-transparent font-bold'>SugGST</p>
         </Link>

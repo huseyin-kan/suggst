@@ -16,7 +16,7 @@ const CreateSuggest = () => {
         e.preventDefault()
         setSubmitting(true)
         try {
-            const response  = await fetch('/api/prompt/new',{
+            const response  = await fetch('/api/suggest/new',{
                 method:'POST',
                 body: JSON.stringify({
                     suggest:post.suggest,
