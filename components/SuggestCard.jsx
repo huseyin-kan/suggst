@@ -44,9 +44,9 @@ const SuggestCard = ({post,handleTagClick,handleEdit,handleDelete}) => {
        {
         session?.user.id === post.creator._id && pathName==='/profile' &&
         (
-            <div className='flex items-center justify-center mt-5 gap-4 border-t border-gray-100 pt-3'>
-                <p className='yellow-gradient text-sm cursor-pointer' onClick={handleEdit}>Edit</p>
-                <p className='red-gradient text-sm cursor-pointer' onClick={handleDelete}>Delete</p>
+            <div className='flex items-center justify-center mt-5 gap-4 border-t border-gray-600 pt-3'>
+                <p className='yellow-gradient text-sm font-bold text-transparent cursor-pointer' onClick={handleEdit}>Edit</p>
+                <p className='red-gradient text-sm font-bold text-transparent cursor-pointer' onClick={handleDelete}>Delete</p>
             </div>
         )
        }

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import SuggestCard from './SuggestCard';
 
 const SuggestCardList=({data,tag,handleTagClick,searchText,closeTag})=>{
-  console.log(data);
+  
   return(
     <div className='mt-16 gap-2 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  '>
       {

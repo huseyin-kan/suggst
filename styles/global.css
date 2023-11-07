@@ -23,7 +23,7 @@
 }
 
 .yellow-gradient{
-    @apply  bg-gradient-to-r bg-clip-text from-yellow-300 to-yellow-600
+    @apply  bg-gradient-to-r bg-clip-text from-green-500 to-green-700
 }
 
 .red-gradient{
