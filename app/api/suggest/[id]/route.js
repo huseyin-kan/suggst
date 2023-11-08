@@ -20,7 +20,7 @@ export const GET = async(request,{params}) =>{
 
 //PATCH
 export const PATCH = async (req,{params}) =>{
-    const {suggest,tag} = req.json()
+    const {suggest,tag} = await req.json()
     try {
         await connectToDB()
 
